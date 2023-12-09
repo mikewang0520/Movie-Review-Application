@@ -8,6 +8,7 @@ function App() {
   //App component will be rerendered when the state is updated
   const [movies, setMovies] = useState();
 
+  //Define an async function to get the movies from the API
   const getMovies = async () => {
     try{
       const response = await api.get('/api/v1/movies');
